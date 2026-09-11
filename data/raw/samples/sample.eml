@@ -1,0 +1,9 @@
+From: alice@acme.example
+To: billing@docrouter.example
+Subject: Invoice INV-1001
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+Please process invoice INV-1001 for Acme Corp.
+Total due: 42.00 USD.
