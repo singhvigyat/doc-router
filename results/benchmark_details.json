@@ -1,0 +1,87 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "stage5_model": "gemini-3.6-flash",
+  "task": "classification_only",
+  "usd_per_million_input": 0.25,
+  "usd_per_million_output": 1.5,
+  "llm_subsample_n": 64,
+  "router_n_attempted": 512,
+  "rows": [
+    {
+      "configuration": "baseline_only",
+      "accuracy": 0.703125,
+      "macro_f1": 0.7047861859024014,
+      "avg_latency_ms": 4.0315316405994395,
+      "cost_per_1000_docs": 0.0,
+      "n_docs": 512
+    },
+    {
+      "configuration": "transformer_only",
+      "accuracy": 0.74609375,
+      "macro_f1": 0.7458220966002457,
+      "avg_latency_ms": 654.7048925781596,
+      "cost_per_1000_docs": 0.0,
+      "n_docs": 512
+    },
+    {
+      "configuration": "llm_only",
+      "accuracy": 0.6721311475409836,
+      "macro_f1": 0.666735347985348,
+      "avg_latency_ms": 5961.25131147541,
+      "cost_per_1000_docs": 0.11010655737704918,
+      "n_docs": 61,
+      "avg_input_tokens": 378.7295081967213,
+      "avg_output_tokens": 10.282786885245901,
+      "cost_per_doc": 0.00011010655737704918,
+      "subsample_n": 64,
+      "n_attempted": 64,
+      "n_cache_hits": 61,
+      "n_failed": 0,
+      "n_quota_skipped": 3
+    },
+    {
+      "configuration": "router",
+      "accuracy": 0.7635270541082164,
+      "macro_f1": 0.7648097341081921,
+      "avg_latency_ms": 1980.6583525049816,
+      "cost_per_1000_docs": 0.03681938877755511,
+      "n_docs": 499,
+      "avg_input_tokens": 121.33266533066133,
+      "avg_output_tokens": 4.324148296593187,
+      "cost_per_doc": 3.681938877755511e-05,
+      "n_attempted": 512,
+      "n_cache_hits": 165,
+      "n_failed": 13,
+      "n_quota_skipped": 0
+    }
+  ],
+  "stage5_log_escalation": {
+    "n": 1,
+    "baseline": 0,
+    "transformer": 0,
+    "llm": 1,
+    "pct_baseline": 0.0,
+    "pct_transformer": 0.0,
+    "pct_llm": 1.0
+  },
+  "router_escalation": {
+    "n": 499,
+    "n_attempted": 512,
+    "baseline": 157,
+    "transformer": 132,
+    "llm": 210,
+    "pct_baseline": 0.31462925851703405,
+    "pct_transformer": 0.26452905811623245,
+    "pct_llm": 0.42084168336673344,
+    "n_failed": 13,
+    "n_quota_skipped": 0,
+    "attempted": {
+      "baseline": 157,
+      "transformer": 132,
+      "llm": 223,
+      "pct_baseline": 0.306640625,
+      "pct_transformer": 0.2578125,
+      "pct_llm": 0.435546875
+    }
+  }
+}
