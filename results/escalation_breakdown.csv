@@ -1,0 +1,7 @@
+scope,tier,count,pct
+scored,baseline,157,0.31462925851703405
+scored,transformer,132,0.26452905811623245
+scored,llm,210,0.42084168336673344
+attempted,baseline,157,0.306640625
+attempted,transformer,132,0.2578125
+attempted,llm,223,0.435546875
