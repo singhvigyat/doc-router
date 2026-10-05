@@ -4,3 +4,5 @@ __pycache__/
 *.py[cod]
 .env
 .ipynb_checkpoints/
+models_store/
+data/processed/
