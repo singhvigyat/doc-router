@@ -1,0 +1,1 @@
+{"doc_id": "bd74970b-007a-4f8b-b516-ccaaefa5bdb2", "tiers_used": ["baseline", "transformer", "llm", "regex", "llm_extract"], "latencies_ms": {"baseline": 80.6, "transformer": 154.13, "llm": 46125.75, "regex": 0.02, "llm_extract": 37821.42}, "cost_estimate": 3.8e-05}
